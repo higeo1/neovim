@@ -13,6 +13,7 @@ end
 project.setup({
   detection_methods = { "pattern" },
   patterns = {
+    ".ccsproject",
     "README.md",
     "Cargo.toml",
     "package.json",
