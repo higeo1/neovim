@@ -33,19 +33,11 @@ mason.setup({
 mason_config.setup({
   ensure_installed = {
     "sumneko_lua",
-    "tsserver",
-    "tailwindcss",
     "bashls",
-    "cssls",
     "dockerls",
-    "emmet_ls",
-    "html",
     "jsonls",
     "pyright",
     "rust_analyzer",
-    "taplo",
-    "yamlls",
-    "gopls",
     "clangd",
   },
 })
@@ -58,17 +50,9 @@ local servers = {
   sumneko_lua = require("lsp.config.lua"), -- lua/lsp/config/lua.lua
   bashls = require("lsp.config.bash"),
   pyright = require("lsp.config.pyright"),
-  html = require("lsp.config.html"),
-  cssls = require("lsp.config.css"),
-  emmet_ls = require("lsp.config.emmet"),
   jsonls = require("lsp.config.json"),
-  tsserver = require("lsp.config.typescript"),
-  yamlls = require("lsp.config.yamlls"),
   dockerls = require("lsp.config.docker"),
-  tailwindcss = require("lsp.config.tailwindcss"),
   rust_analyzer = require("lsp.config.rust"),
-  taplo = require("lsp.config.taplo"), -- toml
-  gopls = require("lsp.config.gopls"),
   clangd = require("lsp.config.clangd"),
   -- remark_ls = require("lsp.config.markdown"),
 }
